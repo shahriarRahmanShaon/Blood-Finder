@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		005895C126D4AA2A00BCA00E /* Blood_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005895C026D4AA2A00BCA00E /* Blood_FinderApp.swift */; };
-		005895C326D4AA2A00BCA00E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005895C226D4AA2A00BCA00E /* ContentView.swift */; };
+		005895C326D4AA2A00BCA00E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005895C226D4AA2A00BCA00E /* RootView.swift */; };
 		005895C526D4AA2D00BCA00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005895C426D4AA2D00BCA00E /* Assets.xcassets */; };
 		005895C826D4AA2D00BCA00E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005895C726D4AA2D00BCA00E /* Preview Assets.xcassets */; };
+		007D753F26EBB2A00063EDAC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D753E26EBB2A00063EDAC /* Onboarding.swift */; };
+		0095084A26F2410F001697A3 /* Roadmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0095084926F2410F001697A3 /* Roadmap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		005895BD26D4AA2A00BCA00E /* Blood-Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blood-Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005895C026D4AA2A00BCA00E /* Blood_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood_FinderApp.swift; sourceTree = "<group>"; };
-		005895C226D4AA2A00BCA00E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		005895C226D4AA2A00BCA00E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		005895C426D4AA2D00BCA00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005895C726D4AA2D00BCA00E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		007D753E26EBB2A00063EDAC /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		0095084926F2410F001697A3 /* Roadmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Roadmap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001212BE26E275700068CB97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		001212BF26E275820068CB97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				007D753E26EBB2A00063EDAC /* Onboarding.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		001212C026E2758D0068CB97 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		001212C126E275A40068CB97 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		005895B426D4AA2A00BCA00E = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +84,14 @@
 		005895BF26D4AA2A00BCA00E /* Blood-Finder */ = {
 			isa = PBXGroup;
 			children = (
+				001212C126E275A40068CB97 /* SubViews */,
+				001212BE26E275700068CB97 /* Model */,
+				001212C026E2758D0068CB97 /* ViewModels */,
+				001212BF26E275820068CB97 /* Views */,
 				005895C026D4AA2A00BCA00E /* Blood_FinderApp.swift */,
-				005895C226D4AA2A00BCA00E /* ContentView.swift */,
+				005895C226D4AA2A00BCA00E /* RootView.swift */,
 				005895C426D4AA2D00BCA00E /* Assets.xcassets */,
+				0095084926F2410F001697A3 /* Roadmap.png */,
 				005895C626D4AA2D00BCA00E /* Preview Content */,
 			);
 			path = "Blood-Finder";
@@ -127,6 +165,7 @@
 			files = (
 				005895C826D4AA2D00BCA00E /* Preview Assets.xcassets in Resources */,
 				005895C526D4AA2D00BCA00E /* Assets.xcassets in Resources */,
+				0095084A26F2410F001697A3 /* Roadmap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005895C326D4AA2A00BCA00E /* ContentView.swift in Sources */,
+				007D753F26EBB2A00063EDAC /* Onboarding.swift in Sources */,
+				005895C326D4AA2A00BCA00E /* RootView.swift in Sources */,
 				005895C126D4AA2A00BCA00E /* Blood_FinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +357,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

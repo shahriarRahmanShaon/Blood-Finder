@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Blood_FinderApp: App {
+    @AppStorage("firstTime") var firstTimeLaunch: Bool = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if(firstTimeLaunch == true){
+                Onboarding()
+            }else{
+                RootView()
+            }
+            
         }
     }
 }
