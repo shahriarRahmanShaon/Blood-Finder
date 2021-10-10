@@ -9,7 +9,32 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        Text("i'm home")
+        TabView{
+            Text("find doners")
+                .tabItem {
+                    Image(systemName: "doc.text.magnifyingglass")
+                    Text("Find doners")
+                }
+            Text("Requests")
+                .tabItem {
+                    Image(systemName: "doc.text")
+                    Text("Requests")
+                }
+            Text("History")
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text("History")
+                }
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+        }
+        .onAppear {
+            UITabBar.appearance().barTintColor = .green
+        }
+        
     }
 }
 
